@@ -1,0 +1,235 @@
+html{
+	font-size: 10px;
+}
+:root{
+	--background: #F8FBFF;
+	--header: #EBF1F8;
+	--footer: #244A74;
+	--letras: #041629;
+	--Pblog: #4D6783;
+	--HeaderLinks: #112F4F;
+	--Poppins:'Poppins', sans-serif;
+	--TitleWgh: 600;
+	--Textwgh: 400;
+	--HeaderFont:'Oswald', sans-serif;
+}
+body{
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	width: 100vw;
+	height: 100vh;
+	background-color:var(--background);
+	overflow-x: hidden;
+}
+main h2{
+	margin-top: 5vw;
+	margin-bottom: 5vw;
+	text-align: center;
+	font-size: calc(2vw + 10px);
+	font-family: var(--Poppins);
+	font-weight: var(--TitleWgh);
+	color: var(--letras);
+}
+/*CSS do Header --> */
+header{
+	width: 100vw;
+	background-color: var(--header);
+}
+.HeaderContent{
+	width: 93%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logoUF{
+	width: 25%;
+}
+.logoUF img {
+		width: 100%;
+		height:auto;
+}
+.links{
+	display: flex;
+    	justify-content: space-evenly;
+	width: 40%;
+	color: var(--HeaderLinks);
+	font-size: calc(1vw + 10px);
+	font-family: var(--HeaderFont);
+}
+.links a{
+	text-decoration: none;
+	color: var(--HeaderLinks);
+}
+/*<-- CSS do Header */
+.membersDad{
+	width: 78vw;
+	margin: 0 auto;
+}
+.members{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.members div{
+	display: flex;
+	width: 30%;
+	flex-direction: column;
+	align-items: center;
+}
+.members div h3{
+	font-family: var(--Poppins);
+	font-size: calc(1vw + 10px);
+	font-weight: var(--TitleWgh);
+}
+.members div p{
+	margin-top: -10px;
+	font-family: var(--Poppins);
+	font-size: calc(1vw + 1px);
+	font-weight: var(--Textwgh);
+}
+.members img{	
+	width: 70%;
+}
+/*CSS do Footer --> */
+.DescFooter{
+	margin-top: 10vw;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	background-color: var(--footer);
+}
+.Address{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 0 auto;
+}
+.Address h4{
+	font-family: var(--Poppins);
+	font-weight: var(--TitleWgh);
+	font-size: calc(1vw + 10px);
+	color: var(--header);
+	text-decoration: underline;
+	margin-bottom: 0px;
+}
+.Address p{
+	margin-top: 0;
+	font-family: var(--Poppins);
+	font-size: calc(1vw + 3px);
+	color: var(--background);
+}
+.Navigation{
+	width: 50%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0 auto;
+}
+.Navigation h4{
+	font-family: var(--Poppins);
+	font-weight: var(--TitleWgh);
+	font-size: calc(1vw + 10px);
+	color: var(--header);
+	text-decoration: underline;
+	margin-bottom: 0px;
+}
+.Navigation a{
+	margin-top: 0;
+	font-family: var(--Poppins);
+	font-size: calc(1vw + 6px);
+	color: var(--background);
+	text-decoration: none;
+}
+.socialMedia{
+	display: flex;
+}
+.socialMedia img{
+	width: 4vw;
+}
+.socialMedia img:nth-child(2){
+	margin-left: 1.1rem;
+}
+/* <-- CSS do Footer*/
+
+/* CSS do Hamburguer */
+.hambur{
+	display: none;
+	width: 50px;
+	height: 50px;
+	background-color:#244A74; 
+}
+.hamburger{
+  position:absolute;
+  top:0;
+  right:0;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  background-color: rgb(212, 223, 234);
+  color: rgb(36, 74, 116);
+  align-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50% ;
+}
+.cross{
+background-color: rgb(212, 223, 234);
+  color: rgb(36, 74, 116);
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 50%;
+  position:absolute;
+  top:0px;
+  right:0;
+  font-size:3em;
+  font-weight:bold;
+  cursor:pointer;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-family: var(--HeaderFont);font-weight:bold; font-size:0.8em; width:100%; background:var(--HeaderLinks);  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:var(--letras);}
+.menu a{text-decoration:none; color: var(--header);}
+
+.glyphicon-home{
+  color:white;
+  font-size:1.5em;
+  margin-top:5px;
+  margin:0 auto;
+}
+/* CSS do hamburger */
+
+/*Reponsividade para o mobile*/
+@media screen and (max-width: 600px){
+	header{
+		background-color: var(--background);
+	}
+	.links{
+		display: none;
+	}
+	.logoUF{
+		width: 50%;
+		margin: 0 auto;
+	}
+	.hambur{
+		display: inline;
+	}
+}
