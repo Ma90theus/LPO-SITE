@@ -24,6 +24,7 @@ body{
         background-color:var(--background);
         overflow-x: hidden;
 }
+
 header{
         width: 100vw;
         background-color: var(--header);
@@ -54,6 +55,53 @@ header{
         text-decoration: none;
         color: var(--HeaderLinks);
 }
+.carrousel{
+        width: 78vw;
+        height: auto;
+        margin: 0 auto;
+}
+.mainContent{
+        margin: 0 auto;
+        width: 78vw;
+        font-family: var(--Poppins);
+}
+.carrousel div{
+        content: '';
+        background-color: #999;
+        align-content: center;
+        margin-top: 4vw;
+        margin-bottom: 7vw;
+        width: 100%;
+        height: 54.3rem;
+}
+.partner{
+        margin-top: 7vw;
+        margin-bottom: 7vw;
+}
+.partner div{
+        width: 53%;
+        display: flex;
+        justify-content: space-evenly;
+}
+.partner div img{
+        width: 25%;
+}
+.partner h2{
+        font-size: calc(1.5vw + 5px);
+        color: var(--HeaderLinks);
+}
+
+.content h2{
+        font-size: calc(1.5vw + 5px);
+        color: var(--HeaderLinks);
+}
+.content p{
+        font-size: calc(1vw + 5px);
+        color: var(--letras);
+}
+
+
+
 .DescFooter{
         margin-top: 10vw;
         display: grid;
