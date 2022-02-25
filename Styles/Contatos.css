@@ -2,14 +2,15 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #E5E5E5;
+    background-color: #F8FBFF;
     font-family:'Outfit', sans-serif;
 }
 h1{
     margin-top: 10rem;
     text-align: center;
-    font-size: 30px;
+    font-size: calc(2vw + 10px);
 }
+
 a{
     display: block;
     font-size: 1.5rem;

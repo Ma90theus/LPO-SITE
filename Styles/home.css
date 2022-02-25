@@ -1,0 +1,28 @@
+html{
+	font-size: 16px;
+}
+:root{
+    --background : #F8FBFF;
+    --header:#EBF1F8;
+    --footer:#244a74;
+    --letras:#041629;
+    --Pblog:#4d6783;
+    --headerLinks:#112f4f;
+    --poppins:'Poppins', sans-serif;
+    --oswald:'Oswald', sans-serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--background);
+    font-family:var(--poppins) ;
+    height:100vh; 
+}
+.container{
+    width:78vw;
+    margin: 0 auto;
+}
+footer{
+    margin-top: 10vw;
+    background-color: #041629;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Home created by Matheus-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!--Links Styles-->
+    <link rel="stylesheet" href="/Styles/home.css">
+    <link rel="stylesheet" href="/Styles/slide.css">
+    <link rel="stylesheet" href="/Styles/Header_All.css">
+    <link rel="stylesheet" href="/Styles/footer.css">
+    <!--Links Libraries-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Hamburguer #Mario-->
+	<div class = "hambur">
+        <button class="hamburger">&#9776;</button>
+        <button class="cross">&#735;</button>
+    </header>
+
+    <div class="menu">
+        <ul>
+            <a href="home.html"><li>Home</li></a>
+            <a href="Artigos.html"><li>Projetos</li></a>
+            <a href="Membros.html"><li>Membros</li></a>
+            <a href="Contatos.html"><li>Contatos</li></a>
+        </ul>
+    </div> 
+</div>
+    <!--Header #Mario-->
+	<header>
+        <div class = "HeaderContent">
+            <div class = "logoUF">
+                <img src="/icons/Group-1.webp" alt="Logo Lpo">
+            </div>
+            <div class = "links">
+                <a href="home.html">Home</a>
+                <a href="Artigos.html">Projetos</a>
+                <a href="Membros.html">Membros</a>
+                <a href="Contatos.html">Contatos</a>
+            </div>
+        </div>
+        </header>
+    <!--Main Article-->
+    <div class = "container">
+        <!--Section1 - Slide-->
+        <section id = "contents">
+            <div class="slides" >
+                <!--Current slide iamge-->
+                <input type="radio" name = "slide" id = slide1 checked>
+                <input type="radio" name = "slide" id = slide2>
+                <input type="radio" name = "slide" id = slide3>
+                <input type="radio" name = "slide" id = slide4>
+                <!--Local were all images will be placed-->
+                <div class = "slide s1">
+                    <img src="/alimentar_slide/1.jpg" alt="">
+                </div>
+                <div class = "slide">
+                    <img src="/alimentar_slide/2.jpg" alt="">
+                </div>
+                <div class = "slide">
+                    <img src="/alimentar_slide/3.jpg" alt="">
+                </div>
+                <div class = "slide">
+                    <img src="/alimentar_slide/4.jpg" alt="">
+                </div>
+            </div>
+
+            <div class = "navigation">
+                <label class = "bar" for="slide1"></label>
+                <label class = "bar" for="slide2"></label>
+                <label class = "bar" for="slide3"></label>
+                <label class = "bar" for="slide4"></label>
+
+            </div>
+        </section>
+        <!--Section2 - Descripion-->
+        <section id = "description">
+            <h2>LABORATÓRIO DE PESQUISA OPERACIONAL</h2>
+            <p>Laboratório de Pesquisa Operacional (LPO) é associado à Faculdade de Engenharia da Computação e Telecomunicações (FCT) e ao Programa de Pós-Graduação em Engenharia Eletrica (PPGEE) da Universidade Federal do Pará (UFPA).
+                <br>
+                <br>
+                O LPO tem por objetivo exercer atividades de ensino e pesquisa em graduação e pós-graduação, desenvolver projetos e prestar serviços nas áreas relacionadas com aplicações em Telecomunicações e Computação Aplicada, e conta com a cooperação de vários parceiros nacionais e internacionais tanto da indústria quanto da academia.
+                <br>
+                <br>
+                Os pesquisadores do LPO atuam no programa de Pós-Graduação em Engenharia Elétrica (PPGEE).</p>
+        </section>
+        <!--Section3 - Partners -->
+        <section id = "partners">
+            <h2>
+                Parcerias
+            </h2>
+            <div class = "partners-itens">
+                <nav class="item"></nav>
+                <nav class="item"></nav>
+                <nav class="item"></nav>
+            </div>
+        </section>
+    </div>
+    <!--Footer #Mario-->
+    <footer class = "DescFooter">
+		<div class = "Address">
+            <section>
+                <h4>Endereço:</h4>
+                <p>
+                    Universidade Federal do Pará - Campus profissional.
+                    R. Augusto Corrjêa, 1 - Guamá, Belém - PA, 66075-110, Anexo do Laboratório de Engenharia Elétrica (LEEC), sala 24
+                </p>
+            </section>
+            <section>
+                <h4>Telefone:</h4>
+                <p>
+                (091) 3201 8112   	
+                </p>
+            </section>
+            <section>
+                <h4>Email:</h4>
+                <p>
+                diego@ufpa.br
+                </p>
+            </section>
+            <section>
+                <h4>Redes Sociais:</h4>
+                <div class = "socialMedia">
+                <img src="/icons/linkedin.webp" alt="">
+                <img src="/icons/facebook.webp" alt="">
+                </div>
+            </section>
+            </div>
+            <div class="Navigation">
+                <h4>Navegação</h4>
+                <a href="">Home</a>
+                <a href="">Projetos</a>
+                <a href="">Membros</a>
+                <a href="">Contatos</a>
+		</div>
+	</footer>
+    <!-- Hamburguer Js #Mario-->
+	<script type = "text/javascript" src = "/Scripts/script_Hamburguer.js" ></script>
+</body>
+</html>
