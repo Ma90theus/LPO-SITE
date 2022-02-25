@@ -20,17 +20,16 @@ $( ".hamburger" ).show();
 });
 // -------------------------------
 //Lógica do carrousel
-let slider = document.querySelectorAll('.selection');
+let slider = document.getElementsByClassName('selection');
 let option = document.getElementsByClassName('options');
 
 console.log(slider);
 console.log(option);
+/*(for(let s = 0; s < option.length; s++){
+    option[s].addEventListener("click", () => callForAction());
+}
 
-option.forEach( (opt,s)=> {
-    
-});
-
-const callForAction = function() {
+let callForAction = function() {
     for(let i = 0; i< 3 ; i++){
         if(option[i] === slider[i]){
             slider[i].style.display= 'inline';
@@ -42,18 +41,21 @@ const callForAction = function() {
                 }    
             });
         }
-    
-}
-
-
-/*let slidersIMGS = ["url(../../images/greg-bulla-CQKJRK7jwFE-unsplash.jpg)",
-                   "url(../../images/kellen-riggin-oA5Il37kCzc-unsplash.jpg)",
-                   "url(../../images/microsoft-365-hC_796Wu-VY-unsplash.jpg)"]
-
-for(let skiper = 0; skiper < slider.length; skiper++){
-    slider[skiper].style.backgroundImage = slidersIMGS[skiper];
-}
-
-function skipImage(){
-
+    }
 }*/
+for(let s = 0; s < option.length; s++){
+    option[s].addEventListener("click", () => {
+        for(let i = 0; i< slider.length ; i++){
+            if(s === i){
+                slider[i].style.display= "inline";
+                slider[i].style.position = "relative";
+                slider[i].style.right = `${(i+1)*100}%`;
+                slider.forEach((img) => {
+                    if(img !== slider[i]){
+                        img.style.display='none';
+                    }    
+                });
+            }
+        }
+    });
+}
