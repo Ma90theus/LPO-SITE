@@ -1,28 +1,43 @@
 #contents{
     margin-top: 10%;
-    max-width: 100vw;
-    height: 500px;
     border-radius: 20px;
     overflow: hidden;
+    max-width: 100%;
+    height: auto;
 }
 .navigation{
-    position: absolute;
+   /* position: absolute;
     left: 50%;
     display: flex;
     top: 100%;
-    transform: translate(-50%,-100%);
+    transform: translate(-50%,-100%);*/
+    display: flex;
+    justify-content: center;
+    transform: translateY(-40px);
+
 }
 .bar{
-    width: 70px;
-    height: 17px;
-    border: 2px solid #fff;
+    width: 10%;
+    height: 20px;
+    border: 3px solid #4D6783;
+    background-color: #F8FBFF;
     margin: 6px;
     border-radius: 5px;
     cursor: pointer;
-    transition: .6s;
+    display: flex;
 }
-.bar:hover{
-    background-color: var(--background);
+.bar div{
+    width: 100%;
+    background-color: #F8FBFF;
+    border: none;
+    transition: .6s;
+    cursor: pointer;
+}
+.bar div:hover{
+    background-color: #4D6783;
+}
+.bar div:focus{
+    background-color: #4D6783;
 }
 input{
     display: none;
@@ -30,7 +45,7 @@ input{
 .slides{
     display: flex;
     width: 400%;
-    height: 100%;
+    height: auto;
 }
 .slide{
     width: 25%;

@@ -17,6 +17,7 @@ body{
     background-color: var(--background);
     font-family:var(--poppins) ;
     height:100vh; 
+    overflow-x: hidden;
 }
 .container{
     width:78vw;
@@ -25,4 +26,10 @@ body{
 footer{
     margin-top: 10vw;
     background-color: #041629;
+}
+h2{
+	font-size:calc(1vw + 10px);
+}
+#description p{
+	font-size: calc(1vw + 5px);
 }
